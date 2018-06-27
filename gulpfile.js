@@ -15,6 +15,9 @@ gulp.task('sass', function() {
     .pipe($.postcss([cssdeclsort({order: 'smacss'})]))
     .pipe($.sourcemaps.write())
     //.pipe(sass().on('error', sass.logError)) // errorが出た方が私は良いので...
+    .pipe($.rename({
+      suffix: '.min'
+    }))
     .pipe(gulp.dest(paths.cssDir));
 });
 
