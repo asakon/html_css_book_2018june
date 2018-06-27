@@ -5,18 +5,23 @@ var browserSync = require('browser-sync');
 var postcss = require('gulp-postcss');
 var cssdeclsort = require('css-declaration-sorter');
 
+var paths = {
+  "scssSrc" : "./src/scss/**/*.scss",
+  "cssDir" : "./dist/css"
+}
+
 gulp.task('sass', function() {
-  return gulp.src('./sass/**/*.scss')
+  return gulp.src(paths.scssSrc)
     .pipe(sourcemaps.init())
-    .pipe(sass({outputStyle: 'expanded'}))
+    .pipe(sass({outputStyle: 'compressed'}))
     .pipe(postcss([cssdeclsort({order: 'smacss'})]))
     .pipe(sourcemaps.write())
     //.pipe(sass().on('error', sass.logError)) // errorが出た方が私は良いので...
-    .pipe(gulp.dest('./css'));
+    .pipe(gulp.dest(paths.cssDir));
 });
 
 gulp.task('sass:watch', function() {
-  gulp.watch('./sass/**/*.scss', ['sass']);
+  gulp.watch(paths.scssSrc, ['sass']);
 });
 gulp.task('browserSync', function() {
   browserSync({
@@ -27,7 +32,7 @@ gulp.task('browserSync', function() {
   
   gulp.watch([
     './**/*.html',
-    './**/*.css'
+    paths.cssDir + '/*.css'
    ], function() {
     browserSync.reload();
   });
