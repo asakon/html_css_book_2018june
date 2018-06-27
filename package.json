@@ -1,0 +1,30 @@
+{
+  "name": "html_css_book_2018june",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "has-values": "^1.0.0",
+    "is-extendable": "^0.1.1",
+    "is-extglob": "^2.1.1",
+    "is-glob": "^3.1.0",
+    "is-number": "^3.0.0",
+    "is-odd": "^2.0.0",
+    "is-utf8": "^0.2.1",
+    "is-windows": "^1.0.2"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.24.5",
+    "css-declaration-sorter": "^3.0.1",
+    "gulp": "^3.9.1",
+    "gulp-load-plugins": "^1.5.0",
+    "gulp-postcss": "^7.0.1",
+    "gulp-sass": "^4.0.1",
+    "gulp-sourcemaps": "^2.6.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
