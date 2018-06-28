@@ -1,6 +1,8 @@
 @charset "UTF-8";
 
 .Menu {
+  display: flex;
+  justify-content: space-between;
   &__item {
     text-transform: uppercase;
   }
