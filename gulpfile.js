@@ -4,7 +4,7 @@ var browserSync = require('browser-sync');
 var cssdeclsort = require('css-declaration-sorter');
 
 var paths = {
-  "scssSrc" : "./src/scss/main.scss",
+  "scssSrc" : "./src/scss/**/*.scss",
   "cssDir" : "./dist/css"
 }
 

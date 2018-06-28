@@ -4,6 +4,9 @@
   display: flex;
   &__main {
     flex: 1 1 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
   &__sub {
     flex: 1 1 45%;
