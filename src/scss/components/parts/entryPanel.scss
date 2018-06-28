@@ -2,4 +2,15 @@
 
 .EntryPanel {
   display: flex;
+  &__main {
+    flex: 1 1 55%;
+  }
+  &__sub {
+    flex: 1 1 45%;
+    margin-right: 20px;
+  }
+  &__thumb {
+    width: 100%;
+    height: auto;
+  }
 }
