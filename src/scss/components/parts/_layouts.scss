@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+.l-column {
+  width: $base-content-width;
+  margin: 0 auto;
+}
+
+.l-halfColumn {
+  max-width: ($base-content-width - $space-unit)/2;
+  margin-right: $space-unit;
+  &:nth-child(even)
+  {
+    margin-right: 0;
+  }
+}
+
+.l-row {
+  max-width: $base-content-width;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}

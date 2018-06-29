@@ -1,5 +1,18 @@
 @charset "UTF-8";
 
-.header {
-  color: #000;
+.Header {
+  display: flex;
+  align-items: center;
+  height: 98px;
+  &__head {
+    text-align: center;
+    flex: 1 1 auto;
+  }
+  &__body{
+    flex: 3 1 auto;
+  }
+}
+
+.logo {
+  font-weight: normal;
 }
