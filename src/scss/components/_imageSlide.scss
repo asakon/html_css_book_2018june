@@ -1,10 +1,19 @@
 @charset "UTF-8";
 
 .ImageSlide {
-  position: relative;
+  /*position: relative;
   display: flex;
+  overflow: hidden;*/
   //flex-direction: column;
   &__main {
     display: flex;
+    /*flex-wrap: nowrap;*/
+  }
+  &__item {
+    /*flex: 0 0 80%;*/
+  }
+  &__image {
+    /*width: 100%;
+    height: auto;*/
   }
 }
