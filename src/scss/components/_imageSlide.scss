@@ -1,10 +1,11 @@
 @charset "UTF-8";
 
 .ImageSlide {
-  /*position: relative;
+  position: relative;
   display: flex;
-  overflow: hidden;*/
-  //flex-direction: column;
+  /*overflow: hidden;*/
+  align-items: center;
+  flex-direction: column;
   &__main {
     display: flex;
     /*flex-wrap: nowrap;*/
