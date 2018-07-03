@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+.ImageSlide {
+  position: relative;
+  display: flex;
+  //flex-direction: column;
+  &__main {
+    display: flex;
+  }
+}
