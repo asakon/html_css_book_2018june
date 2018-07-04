@@ -20,5 +20,21 @@
   &__sub {
     position: absolute;
     bottom: 20px;
+    display: flex;
+    width: 80px;
+    justify-content: space-around;
+  }
+  &__dot {
+    display: block;
+    width: 20px;
+    height: 20px;
+    overflow: hidden;
+    text-indent: 100%;
+    cursor: pointer;
+    border: 1px solid $color-black;
+    border-radius: 10px;
+    &:hover{
+      background-color: $color-black;
+    }
   }
 }
