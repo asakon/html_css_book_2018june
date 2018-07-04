@@ -3,9 +3,15 @@
 @import "./base/variables";
 @import "./base/reset";
 @import "./base/lib/sanitize";
-@import "./components/common/header";
-@import "./components/common/menu";
+
+// parts
 @import "./components/parts/entryPanel";
 @import "./components/parts/button";
 @import "./components/parts/layouts";
+
+//common
+@import "./components/common/header";
+@import "./components/common/menu";
+@import "./components/common/section";
+
 @import "./components/imageSlide";
