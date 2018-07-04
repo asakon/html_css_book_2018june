@@ -4,7 +4,7 @@
   width: 100%;
   display: flex; 
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-between;   //アレンジした
   align-items: center;
   padding: 10% 20%;
   color: #fff;
@@ -14,14 +14,16 @@
   }
   &__head {
     margin: 0 10%;
-    padding: 24px 36px;
+    padding: 24px 36px 20px;
     border: 2px solid #fff;
     font-size: 24px;
     font-weight: normal;
+    line-height: 1;
     text-transform: uppercase;
     letter-spacing: .1em;
   }
   &__body {
     margin: 16px auto;
+    text-align: center;
   }
 }
