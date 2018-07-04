@@ -1,4 +1,20 @@
 @charset "UTF-8";
 
 .OverlayPanel {
+  height: 300px;
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  color: #fff;
+  background-color: $color-black;
+  &__head {
+    margin-bottom: $space-unit;
+    padding: $space-unit;
+    border: 2px solid #fff;
+    font-size: 22px;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+  }
 }
