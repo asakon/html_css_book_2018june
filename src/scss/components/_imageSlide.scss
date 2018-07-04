@@ -3,19 +3,19 @@
 .ImageSlide {
   position: relative;
   display: flex;
-  /*overflow: hidden;*/
+  overflow: hidden;
   align-items: center;
   flex-direction: column;
   &__main {
     display: flex;
-    /*flex-wrap: nowrap;*/
+    flex-wrap: nowrap;
   }
   &__item {
-    /*flex: 0 0 80%;*/
+    flex: 0 0 80%;
   }
   &__image {
-    /*width: 100%;
-    height: auto;*/
+    width: 100%;
+    height: auto;
   }
   &__sub {
     position: absolute;
@@ -29,6 +29,7 @@
     margin-right: 20px;
     overflow: hidden;
     text-indent: 100%;
+    white-space: nowrap;
     cursor: pointer;
     border: 1px solid $color-black;
     border-radius: 10px;
