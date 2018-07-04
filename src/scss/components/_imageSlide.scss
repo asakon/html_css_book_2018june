@@ -36,8 +36,10 @@
     &:last-child {
       margin-right: 0;
     }
-    &.isActive,
     &:hover {
+      background-color: rgba($color-black, .7);
+    }
+    &.isActive {
       background-color: $color-black;
     }
   }
