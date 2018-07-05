@@ -1,8 +1,17 @@
 @charset "UTF-8";
 
 .IconPanel {
+  display: flex;
+  justify-content: space-around;
+  &__item {
+    text-align: center;
+  }
   &__head {
+    margin-bottom: $space-unit/2;
     font-size: 18px;
     letter-spacing: 1px;
+  }
+  &__body {
+    line-height: 1.8;
   }
 }
