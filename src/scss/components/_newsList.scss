@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+.NewsList {
+  display: table;
+  &__item {
+    display: table-row;
+  }
+  &__head,
+  &__body {
+    display: table-cell;
+    padding-bottom: $space-unit/2;
+  }
+  &__head {
+    padding-right: $space-unit;
+  }
+}

@@ -13,6 +13,11 @@
     margin-right: 0;
   }
 }
+.l-quaterColumn {
+  max-width: ($base-content-width - $space-unit*3)/4;
+  display: flex;
+  flex-direction: column;
+}
 
 .l-row {
   margin: 0 auto;
