@@ -6,12 +6,17 @@
 
 // parts
 @import "./components/parts/entryPanel";
+@import "./components/parts/labels";
 @import "./components/parts/button";
 @import "./components/parts/layouts";
 
-//common
+// common
 @import "./components/common/header";
 @import "./components/common/menu";
 @import "./components/common/section";
 
 @import "./components/imageSlide";
+@import "./components/overlayPanel";
+
+// page
+@import "./pages/indexPage";

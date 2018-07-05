@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+.IndexPage {
+  &__drinkMenu,
+  &__foodMenu {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+  &__drinkMenu {
+    background-image: url("#{$image-path}top/menu_drink.jpg");
+  }
+  &__foodMenu {
+    background-image: url("#{$image-path}top/menu_food.jpg");
+  }
+}
