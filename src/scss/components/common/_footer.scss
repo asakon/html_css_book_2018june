@@ -1,13 +1,15 @@
 @charset "UTF-8";
 
 .Footer {
-  padding: $space-unit*2;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: $space-unit 0;
   background-color: $color-black;
+  color: $color-link;
   &__head {
   }
-  &__link {
-    text-transform: uppercase;
-  }
+
   &__foot {
     display: flex;
   }
