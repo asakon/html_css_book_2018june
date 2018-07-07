@@ -28,3 +28,6 @@
 
 // page
 @import "./pages/indexPage";
+
+// 上書き専用のユーティリティは最後に読み込む
+@import "./utils/arrangements";
