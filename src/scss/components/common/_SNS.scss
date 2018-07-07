@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
-.SNS__icon {
-  font-size: 40px;
+.SNS {
+  display: flex;
+
+  &__icon {
+    font-size: 40px;
+  }
 }
