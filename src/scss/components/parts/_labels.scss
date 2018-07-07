@@ -4,10 +4,10 @@
   padding-top: $space-unit;
   padding-bottom: $space-unit;
   color: $color-main-text;
+  @include font-sub;
   font-size: 22px;
   font-weight: normal;
   text-align: center;
-  text-transform: uppercase;
   display: flex;
   align-items: center;
   &::before,

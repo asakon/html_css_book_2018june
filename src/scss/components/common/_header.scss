@@ -14,5 +14,7 @@
 }
 
 .logo {
+  @include font-sub;
+  font-size: 30px;
   font-weight: normal;
 }
