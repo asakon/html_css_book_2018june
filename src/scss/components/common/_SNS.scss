@@ -2,8 +2,12 @@
 
 .SNS {
   display: flex;
-
+  line-height: 1;
   &__icon {
-    font-size: 40px;
+    font-size: 28px;
+    margin-right: $space-unit/2;
+    &:last-child {
+      margin-right: 0;
+    }
   }
 }

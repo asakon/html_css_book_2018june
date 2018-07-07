@@ -4,7 +4,7 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  padding: $space-unit 0;
+  padding: $space-unit*2 0 $space-unit;
   background-color: $color-black;
   color: $color-link;
   &__head {
