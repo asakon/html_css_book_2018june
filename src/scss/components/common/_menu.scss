@@ -8,4 +8,7 @@
     justify-content: space-around;
     text-transform: uppercase;
   }
+  &--sub {
+    flex-direction: column;
+  }
 }
