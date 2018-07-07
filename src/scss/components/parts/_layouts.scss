@@ -6,6 +6,7 @@
 }
 
 .l-halfColumn {
+  flex: 1 0 0%;
   max-width: ($base-content-width - $space-unit)/2;
   margin-right: $space-unit;
   &:nth-child(even)
@@ -30,4 +31,9 @@
   flex: 1 1 50%;
   margin: 0;
   padding: 0;
+}
+
+.l-fitImage {
+  max-width: 100%;
+  max-height: 100%;
 }
