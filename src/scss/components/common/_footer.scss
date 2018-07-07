@@ -8,10 +8,15 @@
   background-color: $color-black;
   color: $color-link;
   &__head {
+    flex: 2 1 50%;
   }
-
+  &__head,
+  &__body {
+    padding-right: $space-unit;
+  }
+  &__body,
   &__foot {
-    display: flex;
+    flex: 1 1 25%;
   }
   a:hover {
     color: #fff;
