@@ -1,12 +1,12 @@
 @charset "UTF-8";
 
 .Footer {
-  display: flex;
-  justify-content: flex-end;
   padding: $space-unit*2;
   background-color: $color-black;
   &__head {
-    margin-right: auto;
+  }
+  &__link {
+    text-transform: uppercase;
   }
   &__foot {
     display: flex;
