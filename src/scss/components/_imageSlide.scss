@@ -21,6 +21,9 @@
     position: absolute;
     bottom: 20px;
     display: flex;
+    @include mq-sp() {
+      bottom: 10px;
+    }
   }
   &__dot {
     display: block;
