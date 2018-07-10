@@ -18,7 +18,10 @@
   }
   &__sub {
     flex: 1 1 45%;
-    margin-right: 20px;
+    margin-right: $space-unit;
+    @include mq-sp {
+      margin-right: $sp-space-unit;
+    }
   }
   &__thumb {
     width: 100%;
