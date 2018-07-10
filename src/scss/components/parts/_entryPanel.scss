@@ -20,6 +20,7 @@
     flex: 1 1 45%;
     margin-right: $space-unit;
     @include mq-sp {
+      flex: 1 0 45%;
       margin-right: $sp-space-unit;
     }
   }
