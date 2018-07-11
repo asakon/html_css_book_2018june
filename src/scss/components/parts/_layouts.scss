@@ -21,6 +21,9 @@
   flex: 1 0 0%;
   max-width: ($base-content-width - $space-unit)/2;
   margin-right: $space-unit;
+  @include mq-sp {
+    margin-right: 0;
+  }
   &:nth-child(even) {
     margin-right: 0;
   }
