@@ -5,6 +5,7 @@
   margin: 0 auto;
   @include mq-sp {
     max-width: 100%;
+    flex-wrap: wrap;
   }
 }
 .l-row {
@@ -41,6 +42,10 @@
   max-width: ($base-content-width - $space-unit*3)/4;
   display: flex;
   flex-direction: column;
+  @include mq-sp {
+    max-width: 45%;
+    margin-bottom: 20px;
+  }
 }
 .l-halfTile {
   display: flex;
