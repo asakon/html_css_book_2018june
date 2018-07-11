@@ -24,14 +24,6 @@
   &:nth-child(even) {
     margin-right: 0;
   }
-  &,
-  &:nth-child(even) {
-    @include mq-sp {
-      margin: 0 auto $sp-space-unit;
-      padding-right: $sp-space-unit;
-      padding-left: $sp-space-unit;
-    }
-  }
   &:nth-child(even) {
     @include mq-sp {
       margin-bottom: 0;
