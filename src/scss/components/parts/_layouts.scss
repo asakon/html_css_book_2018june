@@ -23,6 +23,7 @@
   margin-right: $space-unit;
   @include mq-sp {
     margin-right: 0;
+    margin-bottom: $sp-space-unit;
   }
   &:nth-child(even) {
     margin-right: 0;
