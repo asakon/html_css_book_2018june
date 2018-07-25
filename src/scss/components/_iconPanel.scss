@@ -3,19 +3,31 @@
 .IconPanel {
   display: flex;
   justify-content: space-around;
+  @include mq-sp {
+    display: block;
+  }
   &__item {
     text-align: center;
   }
   &__icon {
     color: $color-link;
     font-size: 40px;
+    @include mq-sp {
+      float: left;
+    }
   }
   &__head {
     margin-bottom: $space-unit/2;
     font-size: 18px;
     letter-spacing: 1px;
+    @include mq-sp {
+      text-align: left; 
+    }
   }
   &__body {
     line-height: 1.8;
+    @include mq-sp {
+      margin-left: 40px;
+    }
   }
 }
