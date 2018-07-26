@@ -21,6 +21,11 @@
   &__foot {
     flex: 1 1 25%;
   }
+  &__body {
+    @include mq-sp {
+      padding: $sp-space-unit;
+    }
+  }
   a:hover {
     color: #fff;
   }
