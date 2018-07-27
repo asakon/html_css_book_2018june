@@ -2,6 +2,10 @@
 
 .NewsList {
   display: table;
+  @include mq-sp {
+    padding-right: $sp-space-unit;
+    padding-left: $sp-space-unit;
+  }
   &__item {
     display: table-row;
   }
@@ -12,5 +16,8 @@
   }
   &__head {
     padding-right: $space-unit;
+    @include mq-sp {
+      padding-right: $sp-space-unit;
+    }
   }
 }

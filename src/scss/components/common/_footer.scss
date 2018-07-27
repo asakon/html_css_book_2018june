@@ -7,6 +7,9 @@
   padding: $space-unit*2 0 $space-unit;
   background-color: $color-black;
   color: $color-link;
+  @include mq-sp {
+    padding: $sp-space-unit 0;
+  }
   &__head {
     flex: 2 1 50%;
   }
@@ -17,6 +20,11 @@
   &__body,
   &__foot {
     flex: 1 1 25%;
+  }
+  &__body {
+    @include mq-sp {
+      padding: $sp-space-unit;
+    }
   }
   a:hover {
     color: #fff;

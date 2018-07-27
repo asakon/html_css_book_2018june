@@ -3,18 +3,46 @@
 .IconPanel {
   display: flex;
   justify-content: space-around;
+  @include mq-sp {
+    display: block;
+  }
   &__item {
     text-align: center;
+    @include mq-sp {
+      text-align: left; 
+    }
   }
   &__icon {
+    color: $color-link;
     font-size: 40px;
+    @include mq-sp {
+      float: left;
+      font-size: 22px;
+      padding: 2px 12px 0 0;
+      &.fa-home {
+        font-size: 30px;
+      }
+      &.fa-coffee {
+        font-size: 24px;
+      }
+      &.fa-users,
+      &.fa-desktop {
+        padding: 6px 14px 0 0;
+      }
+    }
   }
   &__head {
     margin-bottom: $space-unit/2;
     font-size: 18px;
     letter-spacing: 1px;
+    @include mq-sp {
+      margin-bottom: 6px;
+    }
   }
   &__body {
     line-height: 1.8;
+    @include mq-sp {
+      margin-left: 40px;
+    }
   }
 }

@@ -8,6 +8,9 @@
     flex-direction: column;
     justify-content: space-between;
     padding: 20px 0;
+    @include mq-sp {
+      padding: 0;
+    }
   }
   &__head {
     font-size: 18px;
