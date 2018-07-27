@@ -42,6 +42,7 @@
   @include mq-sp {
     display: block;
     margin-bottom: $space-unit;
+    max-width: none;
   }
 }
 .l-halfTile {
