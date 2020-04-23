@@ -3,29 +3,48 @@
 .l-column {
   width: $base-content-width;
   margin: 0 auto;
+  @include mq-sp {
+    max-width: 100%;
+    flex-wrap: wrap;
+    padding: 0 $sp-space-unit;
+  }
+}
+.l-row {
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  @include mq-sp {
+    display: block;
+  }
 }
 
 .l-halfColumn {
   flex: 1 0 0%;
   max-width: ($base-content-width - $space-unit)/2;
   margin-right: $space-unit;
-  &:nth-child(even)
-  {
+  @include mq-sp {
     margin-right: 0;
+    margin-bottom: $sp-space-unit;
+  }
+  &:nth-child(even) {
+    margin-right: 0;
+  }
+  &:nth-child(even) {
+    @include mq-sp {
+      margin-bottom: 0;
+    }
   }
 }
 .l-quaterColumn {
   max-width: ($base-content-width - $space-unit*3)/4;
   display: flex;
   flex-direction: column;
+  @include mq-sp {
+    display: block;
+    margin-bottom: $space-unit;
+    max-width: none;
+  }
 }
-
-.l-row {
-  margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-}
-
 .l-halfTile {
   display: flex;
   flex: 1 1 50%;

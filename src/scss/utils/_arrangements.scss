@@ -1,12 +1,18 @@
 @charset "UTF-8";
 
 .u-linkBox {
-  cursor: pointer;
+  display: block;
 }
 
 .u-mt60px {
   margin-top: 60px;
+  @include mq-sp {
+    margin-top: 30px;
+  }
 }
 .u-mb100px {
   margin-bottom: 100px;
+  @include mq-sp {
+    margin-bottom: 50px;
+  }
 }
